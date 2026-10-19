@@ -3,46 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jak hostovat web přes GitHub Pages</title>
+    <title>SevenClub</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 0 15px;
-            line-height: 1.6;
+            background-color: rgb(27, 26, 26);
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
-        li { margin-bottom: 15px; }
-        code { 
-            background: #eee; 
-            padding: 3px; }
+
+        
+        .main {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            margin: 0;
+            background-image: 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 150px), 
+                url(klub1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        
+        .main nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin-top:20px;
+        }
+
+        .main nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main nav a {
+            text-decoration: none;
+            color: rgba(240, 255, 255, 0.815);
+            font-size: larger;
+            font-weight: 800;
+        }
+
+        .main nav a:hover,
+        .main nav a.active {
+            color: rgba(240, 255, 255, 0.959);
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+        }
+
+        h1 {
+            color: chartreuse;
+            text-align: center;
+            margin-top: 0px;
+            position: absolute;
+        }
+        hr{
+           color: chartreuse;
+           background-color: chartreuse;
+           
+
+
+
+        }
+        .slogan{
+            text-align: center;
+            color: grey;
+            font-weight: bolder;
+            font-size:100px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: absolute;
+            gap: 51px;
+            
+            
+
+
+
+        }
     </style>
 </head>
 <body>
-    <h1>Jak hostovat web přes GitHub Pages?</h1>
-    <ol>
-        <li>
-            Přihlaš se na svůj GitHub účet.
-        </li>
-        <li>
-            Otevři <a href="https://github.com/chlubna25/jak_hostovat">vzorový repozitář</a>.
-            Klikni na <b>Fork</b>, změň název repozitáře
-            a potvrď <b>Create fork</b>.
-        </li>
-        <li>
-            Ve svém repozitáři klikni na <b>+</b>, zvol <b>Upload files</b> a nahraj své soubory webu.
-        </li>
-        <li>
-            Otevři <b>Settings → Pages</b>. U položky <b>Source</b> vyber
-            <b>Deploy from a branch</b>. Nastav <code>main</code>, <code>/(root)</code>
-            a klikni na <b>Save</b>.
-        </li>
-        <li>
-            Za pár minut najdeš web na adrese
-            <code>https://TVUJ-UCET.github.io/NÁZEV-REPA/</code>.
-        </li>
-    </ol>
 
-    <p><b>Pozor:</b> Pro bezplatné GitHub Pages musí být repozitář veřejný (<b>Public</b>).</p>
+    <div class="main">
+        <nav class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="hours.html">Opening hours</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>SevenClub</h1>
+    </div>
+    <hr>
+    <p class="slogan">The real magic</p>
+    
+
 </body>
 </html>
