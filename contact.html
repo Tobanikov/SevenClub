@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      body {
+        background-color: rgb(27, 26, 26);
+        margin: 0;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .main nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .main nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .main nav a {
+        text-decoration: none;
+        color: rgba(240, 255, 255, 0.815);
+        font-size: larger;
+        font-weight: 800;
+      }
+
+      .main nav a:hover,
+      .main nav a.active {
+        color: rgba(240, 255, 255, 0.959);
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+      }
+
+      h1 {
+        color: chartreuse;
+        text-align: center;
+        margin-top: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hours.html">Opening hours</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>SevenClub</h1>
+    </div>
+  </body>
+</html>

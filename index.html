@@ -1,107 +1,121 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SevenClub</title>
     <style>
-        body {
-            background-color: rgb(27, 26, 26);
-            margin: 0;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
+      body {
+        background-color: rgb(27, 26, 26);
+        margin: 0;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
 
-        
-        .main {
-            position: relative;
-            width: 100%;
-            height: 600px;
-            margin: 0;
-            background-image: 
-                linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 150px), 
-                url(klub1.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+      .main {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        margin: 0;
+        background-image:
+          linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 150px),
+          url(klub1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-        
-        .main nav {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            margin-top:20px;
-        }
+      .main nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 20px;
+      }
 
-        .main nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            margin: 0;
-            padding: 0;
-        }
+      .main nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+      }
 
-        .main nav a {
-            text-decoration: none;
-            color: rgba(240, 255, 255, 0.815);
-            font-size: larger;
-            font-weight: 800;
-        }
+      .main nav a {
+        text-decoration: none;
+        color: rgba(240, 255, 255, 0.815);
+        font-size: larger;
+        font-weight: 800;
+      }
 
-        .main nav a:hover,
-        .main nav a.active {
-            color: rgba(240, 255, 255, 0.959);
-            text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
-        }
+      .main nav a:hover,
+      .main nav a.active {
+        color: rgba(240, 255, 255, 0.959);
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+      }
 
-        h1 {
-            color: chartreuse;
-            text-align: center;
-            margin-top: 0px;
-            position: absolute;
-        }
-        hr{
-           color: chartreuse;
-           background-color: chartreuse;
-           
-
-
-
-        }
-        .slogan{
-            text-align: center;
-            color: grey;
-            font-weight: bolder;
-            font-size:100px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            position: absolute;
-            gap: 51px;
-            
-            
-
-
-
-        }
+      h1 {
+        color: chartreuse;
+        text-align: center;
+        margin-top: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      hr {
+        color: chartreuse;
+        background-color: chartreuse;
+        height: 10px;
+        margin: 0;
+        border-color: chartreuse;
+      }
+      .slogan {
+        text-align: center;
+        color: rgb(116, 113, 113, 0.5);
+        font-weight: bolder;
+        font-size: 110px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 0;
+      }
+      .celyblok2 {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+      .blocek {
+        height: 400px;
+        width: 300px;
+        background-color: rgb(41, 40, 40);
+        margin: 5px;
+        border-radius: 15px;
+        border: 5px;
+        border-style: solid;
+        border-color: chartreuse;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="main">
-        <nav class="site-nav" aria-label="Primary">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="hours.html">Opening hours</a></li>
-                <li><a href="location.html">Location</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>SevenClub</h1>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hours.html">Opening hours</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>SevenClub</h1>
+      <p class="slogan">The real magic</p>
     </div>
-    <hr>
-    <p class="slogan">The real magic</p>
-    
-
-</body>
+    <hr />
+    <div class="celyblok2">
+      <div class="blocek"></div>
+      <div class="blocek"></div>
+      <div class="blocek"></div>
+    </div>
+  </body>
 </html>
