@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Location</title>
-    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="icon" type="image/x-icon" href="favicon.jpg" />
     <style>
       body {
         background-color: rgb(27, 26, 26);
@@ -50,6 +50,28 @@
         top: 0;
         left: 0;
       }
+      hr {
+        color: chartreuse;
+        background-color: chartreuse;
+        height: 10px;
+        margin: 0;
+        border-color: black;
+        margin-top: 55px;
+      }
+      .mapa {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .lokalitablok {
+        width: 50%;
+        height: 200px;
+        background-color: chartreuse;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 10px;
+      }
     </style>
   </head>
   <body>
@@ -63,6 +85,19 @@
         </ul>
       </nav>
       <h1>SevenClub</h1>
+    </div>
+    <hr />
+    <div class="lokalitablok"></div>
+    <div class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1626.8987867471183!2d16.611489479884813!3d49.19065221179421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129455e1f0a0b7%3A0xdec394ac5238ed94!2sBrno%20hl.n.!5e0!3m2!1scs!2scz!4v1793638139970!5m2!1scs!2scz"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
     </div>
   </body>
 </html>
