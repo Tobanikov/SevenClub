@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Opening Hours</title>
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
     <style>
       body {
         background-color: rgb(27, 26, 26);
@@ -41,12 +42,50 @@
       }
 
       h1 {
+        margin-left: 5px;
         color: chartreuse;
         text-align: center;
         margin-top: 0px;
         position: absolute;
         top: 0;
         left: 0;
+      }
+      .blocek {
+        height: 400px;
+        width: 300px;
+        background-color: rgb(41, 40, 40);
+        margin: 5px;
+        border-radius: 15px;
+        border: 5px;
+        border-style: solid;
+        border-color: chartreuse;
+        font-weight: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgba(240, 255, 255, 0.815);
+        text-align: center;
+        font-size: larger;
+        line-height: 2;
+        padding: 5px;
+       }
+       h2{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgba(240, 255, 255, 0.815);
+        text-align: center;
+        margin-top: 30px;
+       }
+       hr {
+        color: chartreuse;
+        background-color: chartreuse;
+        height: 10px;
+        margin: 0;
+        border-color: black;
+        margin-top: 55px;
+      }
+      .celyblok2 {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
       }
     </style>
   </head>
@@ -61,6 +100,13 @@
         </ul>
       </nav>
       <h1>SevenClub</h1>
+    </div>
+    <hr>
+    <h2>When do we open up?</h2>
+    <div class="celyblok2">
+      <div class="blocek">Monday-Wednesday <br><br><br>Prep: 16:00-19:00 <br><br> Open: 19:00-1:00 <br><br>After: 1:00-2:00</div>
+      <div class="blocek">Friday-Sunday <br><br><br>Prep: 18:00-20:00 <br><br> Open: 20:00-3:00 <br><br>After: 3:00-4:00</div>
+      <div class="blocek">Holidays<br><br><br>Prep: 16:00-17:00 <br><br> Open: 17:00-3:00 <br><br>After: 3:00-5:00</div>
     </div>
   </body>
 </html>
