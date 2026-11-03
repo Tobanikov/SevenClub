@@ -1,0 +1,6 @@
+Využití AI v projektu SevenClub
+ - Generování obrázků
+ - Rada ohledně gradient na hlavní stránce (stín na obrázku)
+ - Tvorba Favicony
+ - Rada ohledně &nbsp
+ - Úprava vzhledu kódu (uspořádání pro čitelnost)
